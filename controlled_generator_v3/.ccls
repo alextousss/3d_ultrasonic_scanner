@@ -1,0 +1,25 @@
+clang
+
+%c -std=c11
+%cpp -std=c++11
+
+-I/home/alex/workspace/TIPE/generator/include
+-I/home/alex/workspace/TIPE/generator/src
+-I/home/alex/.platformio/packages/framework-arduino-avr/cores/arduino
+-I/home/alex/.platformio/packages/framework-arduino-avr/variants/standard
+-I/home/alex/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src
+-I/home/alex/.platformio/packages/framework-arduino-avr/libraries/HID/src
+-I/home/alex/.platformio/packages/framework-arduino-avr/libraries/SPI/src
+-I/home/alex/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src
+-I/home/alex/.platformio/packages/framework-arduino-avr/libraries/Wire/src
+-I/home/alex/.platformio/packages/toolchain-atmelavr/avr/include
+-I/home/alex/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/5.4.0/include
+-I/home/alex/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/5.4.0/include-fixed
+-I/home/alex/.platformio/packages/tool-unity
+
+-DPLATFORMIO=40201
+-DARDUINO_AVR_UNO
+-DF_CPU=16000000L
+-DARDUINO_ARCH_AVR
+-DARDUINO=10808
+-D__AVR_ATmega328P__
